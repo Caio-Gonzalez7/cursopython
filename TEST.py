@@ -1,1 +1,0 @@
-print('\033[2;33;41m Meu nome é Caio Gonzelez Nogueira Osório, tenho 20 anos e sou estudante de Analise e Desenvolvimento de Sistemas na Faculdade Anhanguera\033[m')
