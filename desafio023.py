@@ -1,10 +1,11 @@
-num = int(input('Digite um numero de 0 a 9999: '))
-u = num // 1 % 10
-d = num // 10 % 10
-c = num // 100 % 10
-m = num // 1000 % 10
-print('Analisando o numero {}'.format(num))
-print('Unidade: {}'.format(u))
-print('Dezena: {}'.format(d))
-print('Centena: {}'.format(c))
-print('Milhar: {}'.format(m))
+numero = input('Digite um numeor de 0 a 9999: ')
+
+unidade = numero[:5]
+dezena = numero[2:3].lstrip()
+centena = numero[1:2]
+mil = numero[0]
+
+print('Unidade: {}'.format(unidade[:5]))
+print('Dezena: {}'.format(dezena))
+print('Centena: {}'.format(centena))
+print('Milhar: {}'.format(mil))
