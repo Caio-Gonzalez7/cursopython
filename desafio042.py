@@ -3,7 +3,7 @@ b = int(input('Valor da segunda reta: '))
 c = int(input('Valor da terceira reta: '))
 
 if a + b < c or b + c < a or c + a < b:
-    print('Não forma nenhum triangulo')
+    print('Não forma triangulo!')
 
 elif a == b == c:
     print('Forma um triangulo EQUILÁTERO!')
