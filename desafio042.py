@@ -2,7 +2,7 @@ a = int(input('Valor da primeira reta: '))
 b = int(input('Valor da segunda reta: '))
 c = int(input('Valor da terceira reta: '))
 
-if a + b < c or b + c < a or c + a < b:
+if a + b > c and b + c > a and c + a > b:
     print('Não forma triangulo!')
 
 elif a == b == c:
