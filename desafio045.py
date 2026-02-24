@@ -1,13 +1,20 @@
-print ('JOGO PEDRA, PAPEL, TESOURA')
 from random import randint
+
+print ('JOGO PEDRA, PAPEL, TESOURA')
+
 itens = ('Pedra', 'Papel', 'Tesoura')
+
 computador = randint(0, 2)
+
 print('''Suas opções:
 [ 0 ] PEDRA
 [ 1 ] PAPEL
 [ 2 ] TESOURA''')
+
 jogador = int(input('Qual é a sua jogada? '))
+
 print('O computador jogou {}'.format(itens[computador]))
+
 if computador == 0: # computador jogou PEDRA
     if jogador == 0:
         print('EMPATE')
@@ -17,6 +24,7 @@ if computador == 0: # computador jogou PEDRA
         print('COMPUTADOR VENCE')
     else:
         print('JOGADA INVÁLIDA')
+
 elif computador == 1: # computador jogou PAPEL
     if jogador == 0:
         print('COMPUTADOR VENCE')
