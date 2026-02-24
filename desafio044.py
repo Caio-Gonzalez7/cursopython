@@ -12,7 +12,7 @@ print('\nDinheiro/cheque com 10% off\nCartão à vista 5% off\n2x no cartão, va
 3 == c2
 4 == c3
 
-p = int(input('Para escolher cartão/cheque digite 1\nPara escolher cartão à vista digite 2\nPara escolher 2x no cartão digite 3\nPara escolher 3x ou mais no cartão digite 4\nQual a sua escolha? '))
+p = int(input('[ 1 ] cartão/cheque \n[ 2 ] cartão à vista \n[ 3 ] 2x no cartão \n[ 4 ] 3x ou mais no cartão \nQual a sua escolha? '))
 
 if p == 1:
     print('O valor do produto com desconto por pagamento com dinheiro/cheque é de 10%, o valor passou a ser R${:.2f}'.format(dc))
@@ -21,4 +21,5 @@ elif p == 2:
 elif p == 3:
     print('O valor a pagar é o mesmo de R${:.2f}'.format(c2))
 elif p == 4:
-    print('O valor do produto com o acréscimo por pagamento em mais de 3x no cartão é de 20%, o vcalor a ser pagou é de R${:.2f}'.format(c3))
+    totalparc = int(input('Quantas parcelas? '))
+    print('O valor do produto com o acréscimo por pagamento em {}x no cartão é de 20%, o valor a ser pago é de R${:.2f}'.format(totalparc, c3))
