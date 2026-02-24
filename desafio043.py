@@ -15,4 +15,4 @@ elif IMC <= 39.9:
     print('Você esta com obesidade, seu IMC é {:.2f}'.format(IMC))
 
 else:
-    print('Você esta com obesidade mórbida, seu IMC é {:.2f}'.format(IMC))aa
+    print('Você esta com obesidade mórbida, seu IMC é {:.2f}'.format(IMC))
