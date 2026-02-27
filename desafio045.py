@@ -1,46 +1,34 @@
-from random import randint
+import random 
 
-print ('JOGO PEDRA, PAPEL, TESOURA')
+print('JOGO PEDRA, PAPEL, TESOURA')
 
 itens = ('Pedra', 'Papel', 'Tesoura')
-
-computador = randint(0, 2)
+computador = random.randint(0, 2) 
 
 print('''Suas opções:
 [ 0 ] PEDRA
 [ 1 ] PAPEL
 [ 2 ] TESOURA''')
 
-jogador = int(input('Qual é a sua jogada? '))
+jogador = int(input ('Qual a sua jogada? '))
 
-print('O computador jogou {}'.format(itens[computador]))
+if computador == jogador:
+    print('O jogo empatou!!')
 
-if computador == 0: # computador jogou PEDRA
-    if jogador == 0:
-        print('EMPATE')
-    elif jogador == 1:
-        print('JOGADOR VENCE')
-    elif jogador == 2:
-        print('COMPUTADOR VENCE')
-    else:
-        print('JOGADA INVÁLIDA')
+elif computador == 0 and jogador == 1:
+    print('Você ganhou!!')
 
-elif computador == 1: # computador jogou PAPEL
-    if jogador == 0:
-        print('COMPUTADOR VENCE')
-    elif jogador == 1:
-        print('EMPATE')
-    elif jogador == 2:
-        print('JOGADOR VENCE')
-    else:
-        print('JOGADA INVÁLIDA')
+elif computador == 1 and jogador == 0:
+    print('O computador ganhou!!')
 
-elif computador == 2: # computador jogou TESOURA
-    if jogador == 0:
-        print('JOGADOR VENCE')
-    elif jogador == 1:
-        print('COMPUTADOR VENCE')
-    elif jogador == 2:
-        print('EMPATE')
-    else:
-        print('JOGADA INVÁLIDA')
+elif computador == 2 and jogador == 1:
+    print('O computador ganhou!!')
+
+elif computador == 1 and jogador == 2:
+    print('Você ganhou!!')
+
+elif computador == 0 and jogador == 2:
+    print('O computador ganhou!!')
+
+elif computador == 2 and jogador == 0:
+    print('Você ganhou!!')
