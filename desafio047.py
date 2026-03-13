@@ -1,2 +1,2 @@
-c = range(0, 50, 2)
-print(len(c))
+for c in range(2, 51, 2):
+    print(c)
