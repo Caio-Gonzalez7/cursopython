@@ -8,3 +8,8 @@ for c in range(1, n + 1):
         print('\033[31m', end='')
     print('{} '.format(c), end='')
 print(f'\n\033[mO número {n} foi divísivel {total} vezes')
+
+if total == 2:
+    print(f'É por isso é um número primo')
+else:
+    print(f'')
