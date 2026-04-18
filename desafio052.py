@@ -10,6 +10,6 @@ for c in range(1, n + 1):
 print(f'\n\033[mO número {n} foi divísivel {total} vezes')
 
 if total == 2:
-    print(f'É por isso é um número primo')
+    print(f'É por isso é um número primo!')
 else:
-    print(f'')
+    print(f'Não é um número primo!')
