@@ -1,6 +1,5 @@
 n1 = int(input('Digite um número: '))
 n2 = int(input('Digite mais um número: '))
-n3 = 0
 menu = 0
 
 while menu != 5:
@@ -16,11 +15,20 @@ while menu != 5:
     elif menu == 3: 
         if n1 > n2:
             print(f'\nO maior valor entre {n1} e {n2} é o número {n1}.\n')
-        else:
+        
+        elif n1 < n2:
             print(f'\nO maior valor entre {n1} e {n2} é o número {n2}.\n')
+        
+        elif n1 == n2:
+            print(f'\nOs valores são iguais, respectivamente {n1}\n')
+        
     elif menu == 4:
         print('Digite novamente!')
         n1 = int(input('Escolha o novo número: '))
         n2 = int(input('Escolha o mais um novo número: '))
+    
+    elif menu > 5:
+        print('\nOpção invalida. Tente novamente!\n')
+       
 
 print('Fim do programa!')
