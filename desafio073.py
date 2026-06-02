@@ -4,7 +4,7 @@ print('A tabela atual é:\n')
 print(times)
 
 print('\nOs 5 primeiros times são:')
-for time in times [0:6]:
+for time in times [0:5]:
     print(time)
 
 print('\nOs 4 ultimos times são:')
