@@ -1,5 +1,7 @@
-import random
+from random import randint
 
-tupla_aleatoria = tuple(random.randint(1, 10) for _ in range(0,6))
+n = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10),)
 
-print(tupla_aleatoria)   
+print(f'Os valores sorteados são {n}')
+print(f'O maior valor sorteado foi {max(n)}')
+print(f'O menor valor sorteado foi {min(n)}')
