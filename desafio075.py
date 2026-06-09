@@ -1,14 +1,20 @@
-cont = 0
-nove = 9
-n1 = int(input('Digite um número: '))
-n2 = int(input('Digite um número: '))
-n3 = int(input('Digite um número: '))
-n4 = int(input('Digite o ultimo número: '))
+n = (int(input('Digite um número: ')), int(input('Digite um número: ')), int(input('Digite um número: ')), int(input('Digite um número: ')))
 
-tup = (n1, n2, n3, n4)
+print(f'Você digitou os valores {n}')
 
-for nove in tup:
-    cont += 1 
+if 9 in n:
+    print(f'O valor 9 apareceu {n.count(9)} vezes.')
+else:
+    print('O valor 9 não foi digitado!')
 
-print(tup)
-print(cont)
+if 3 in n:
+    print(f'O número 3 apareceu na posição {n.index(3)+1}.')
+
+else:
+    print('O valor 3 não foi digitado!')
+
+print(f'Os valores pares foram: ', end = '')
+
+for num in n:
+    if num % 2 == 0:
+        print(num, end=' ')
